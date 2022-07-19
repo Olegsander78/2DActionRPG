@@ -11,8 +11,8 @@ TagManager:
   - 
   - Water
   - UI
-  - 
-  - 
+  - Enemy
+  - Damagable
   - 
   - 
   - 
@@ -40,4 +40,19 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: BG
+    uniqueID: 37394615
+    locked: 0
+  - name: Object
+    uniqueID: 3789171169
+    locked: 0
+  - name: Enemy
+    uniqueID: 2838138123
+    locked: 0
+  - name: Player
+    uniqueID: 3506007005
+    locked: 0
+  - name: UI
+    uniqueID: 2913797535
     locked: 0
