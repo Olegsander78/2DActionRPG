@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Enemy : Character
+public abstract class Enemy : Character
 {
   public enum State
     {
@@ -12,26 +12,25 @@ public class Enemy : Character
         Attack
     }
 
-    public State curState;
+    protected State curState;
 
-    [SerializeField] private float moveSpeed;
-    [SerializeField] private float chaseDistance;
-    [SerializeField] private float attackDistance;
+    [SerializeField] protected float moveSpeed;
+    [SerializeField] protected float chaseDistance;
 
-    private GameObject target;
+    protected GameObject target;
 
-    private float lastAttackTime;
-    private float targetDistance;
+    protected float lastAttackTime;
+    protected float targetDistance;
 
     [Header("Components")]
-    [SerializeField] private SpriteRenderer spriteRenderer;
+    [SerializeField] protected SpriteRenderer spriteRenderer;
 
-    private void Start()
+    protected virtual void Start()
     {
         target = FindObjectOfType<Player>().gameObject;
     }
 
-    private void Update()
+    protected virtual void Update()
     {
         targetDistance = Vector2.Distance(transform.position, target.transform.position);
 
@@ -76,21 +75,21 @@ public class Enemy : Character
             AttackTarget();
         }
     }
-    void AttackTarget()
+    protected virtual void AttackTarget()
     {
 
     }
 
-    bool CanAttack()
+    protected virtual bool CanAttack()
     {
         return false;
     }
 
-    bool InAttackRange()
+    protected virtual bool InAttackRange()
     {
-        return targetDistance <= attackDistance;
+        return false;
     }
-    Vector2 GetTargetDirection()
+    protected Vector2 GetTargetDirection()
     {
         return (target.transform.position - transform.position).normalized;
     }
@@ -101,7 +100,7 @@ public class Enemy : Character
         Destroy(gameObject);
     }
 
-    private void DropItems()
+    protected void DropItems()
     {
         
     }
