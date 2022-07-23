@@ -12,11 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f3d865203aaa834dab53e18775f86fd, type: 3}
   m_Name: Mace
   m_EditorClassIdentifier: 
-  DisplayName: 
-  Descrition: 
+  DisplayName: Mace
+  Descrition: Slower hitting  weapon
   Icon: {fileID: 0}
   MaxStackSize: 1
   EquipPrefab: {fileID: 0}
-  Damage: 0
-  Range: 0
-  AttackRate: 0
+  Damage: 3
+  Range: 1.2
+  AttackRate: 1

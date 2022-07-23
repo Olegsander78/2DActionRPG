@@ -16,7 +16,7 @@ MonoBehaviour:
   Descrition: A sharp sword
   Icon: {fileID: -1022324140503699289, guid: d60bbc4d1432228489e35ced51bd1d2c, type: 3}
   MaxStackSize: 1
-  EquipPrefab: {fileID: 0}
+  EquipPrefab: {fileID: 4319205081918074980, guid: 9033c788eaf7e4c4f82c2e858acac44a, type: 3}
   Damage: 1
   Range: 1.2
   AttackRate: 0.4
