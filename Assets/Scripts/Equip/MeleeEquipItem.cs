@@ -19,7 +19,7 @@ public class MeleeEquipItem : EquipItem
 
         lastAttackTime = Time.time;
 
-        anim.SetTrigger("attack");
+        anim.SetTrigger("Attack");
 
         RaycastHit2D hit = Physics2D.Raycast(transform.position, transform.up, i.Range, hitLayerMask);
 

@@ -203,7 +203,7 @@ MonoBehaviour:
       m_Calls: []
   m_Sprite: {fileID: -1045181238759104467, guid: c4f3a9366af8961409b97a770879789c, type: 3}
   m_Type: 0
-  m_PreserveAspect: 0
+  m_PreserveAspect: 1
   m_FillCenter: 1
   m_FillMethod: 4
   m_FillAmount: 1
@@ -302,3 +302,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 42283bf1f10d0cf4585fc420db7e5bd9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  icon: {fileID: 7126172166637324313}
+  quantityText: {fileID: 7869552931086340354}
