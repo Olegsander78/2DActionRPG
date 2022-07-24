@@ -719,6 +719,11 @@ MonoBehaviour:
   hitSFX: {fileID: 8300000, guid: bca3b75b48468b24985f3b15bf77853a, type: 3}
   moveSpeed: 2
   chaseDistance: 4
+  dropItems:
+  - {fileID: 11400000, guid: 38e5e49256fbc3b479fd8ecae5377d91, type: 2}
+  - {fileID: 11400000, guid: dc41b68bafdfee44baca82e9b20000d8, type: 2}
+  - {fileID: 11400000, guid: 9df1360afda8b8643b418e0a34117334, type: 2}
+  dropItemPrefab: {fileID: 6400815716858129536, guid: 0ecd9d9ca0be48343ad7a49e5b3df77c, type: 3}
   spriteRenderer: {fileID: 526384097}
   damage: 5
   attackRange: 1
@@ -1615,7 +1620,7 @@ GameObject:
   - component: {fileID: 974214494}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9180,6 +9185,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1395702808}
   - component: {fileID: 1395702807}
+  - component: {fileID: 1395702809}
   m_Layer: 0
   m_Name: _GameManager
   m_TagString: Untagged
@@ -9219,6 +9225,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1395702809
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1395702806}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3bf70579d4a99f44dad93ace7ca2e337, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerAudioSource: {fileID: 974214494}
 --- !u!1 &1424234574
 GameObject:
   m_ObjectHideFlags: 0

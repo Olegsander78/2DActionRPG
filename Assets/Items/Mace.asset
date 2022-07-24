@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DisplayName: Mace
   Descrition: Slower hitting  weapon
-  Icon: {fileID: 0}
+  Icon: {fileID: -4107469028111699786, guid: d60bbc4d1432228489e35ced51bd1d2c, type: 3}
   MaxStackSize: 1
   EquipPrefab: {fileID: 0}
   Damage: 3
