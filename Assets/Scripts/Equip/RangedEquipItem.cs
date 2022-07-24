@@ -15,6 +15,14 @@ public class RangedEquipItem : EquipItem
         if (Time.time - lastAttackTime < i.FireRate)
             return;
 
+        if (Inventory.Instance.HasItem(i.ProjectileItemData) == false)
+            return;
+
         lastAttackTime = Time.time;
+
+        i.Fire(muzzle.position,muzzle.rotation,Character.Team.Player);
+        Inventory.Instance.RemoveItem(i.ProjectileItemData);
+
+        AudioManager.Instance.PlayPlayerSound(shootSFX);
     }
 }
